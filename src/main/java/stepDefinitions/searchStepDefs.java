@@ -8,12 +8,13 @@ import PageObjects.searchPage;
 
 public class searchStepDefs {
 
-    protected WebDriver driver = DriverUtil.getDefaultDriver();
+
 
 
     @Given("I am on ebay page \"([^\"]*)\"$")
     public void I_am_on_ebay_page(String weburl) {
         searchPage.navigateToUrl(weburl);
+
 
     }
 }
