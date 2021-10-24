@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DriverUtil {
     public static long DEFAULT_WAIT = 20;
-    protected static WebDriver driver;
+    public static WebDriver driver;
 
     public static WebDriver getDefaultDriver() {
         if (driver != null) {
@@ -37,8 +37,7 @@ public class DriverUtil {
     }
 
     /**
-     * By default to web driver will be PhantomJS
-     *
+     * By default to web driver will be PhantomJS     *
      * Override it by passing -DWebDriver=Chrome to the command line arguments
      * @param capabilities
      * @return
